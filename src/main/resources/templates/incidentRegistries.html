@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Incident Log</title>
+</head>
+<body>
+<h1>Incidents List</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Date</th>
+        <th>description</th>
+    </tr>
+    <tr th:each="incidentRegistry:${incidentRegistries}">
+        <td th:text="${incidentRegistry.id}">555</td>
+        <td th:text="${incidentRegistry.dateIncident}">Jhon</td>
+        <td th:text="${incidentRegistry.descrption}">Jhon</td>
+    </tr>
+</table>
+
+</body>
+</html>

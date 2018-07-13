@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Incidents</title>
+</head>
+<body>
+<h1>Incidents list</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+    <tr th:each="incident:${incidents}">
+        <td th:text="${incident.id}">555</td>
+        <td th:text="${incident.name}">Jhon</td>
+    </tr>
+</table>
+
+</body>
+</html>
