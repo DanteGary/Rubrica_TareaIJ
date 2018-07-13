@@ -6,10 +6,10 @@ import javax.persistence.OneToOne;
 @Entity
 public class Incident extends ModelBase{
     private String name;
-    /*@OneToOne(optional = false)*/
+    @OneToOne(optional = false)
     private IncidentRegistry incidentRegistry;
 
-    public String getName() {+++++
+    public String getName() {
         return name;
     }
 
